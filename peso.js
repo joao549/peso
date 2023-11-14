@@ -4,7 +4,7 @@ altura = parseFloat(altura)/100;
 var peso = prompt('Informe seu peso: ');
 peso = parseFloat(peso);
 
-var calculo = (peso/altura**2);
+var calculo = ((peso/altura**2).toFixed(2));
 
 var resultado = null;
 
@@ -43,7 +43,7 @@ var resultado = null;
 
 document.write('<hr>')
 
-document.write(nome + ' - ' + calculo + ' | ' + resultado);
+document.write(nome + ' | ' + calculo + ' | ' + resultado);
 
 document.write('<hr>')
 
